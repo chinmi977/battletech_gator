@@ -10,7 +10,7 @@
 <body>
   <section class="hero is-dark is-fullheight">
     <div class="hero-head">
-      <h1 class="title">
+      <h1 class="subtitle">
         Battletech Shot Solving Computer
       </h1>
     </div>
@@ -33,7 +33,7 @@
           </div>
           <div class="level-item">
             <div id="Gunnery" class="content-tab" >
-              <p class="title">Select Gunnery skill.</p>
+              <p class="subtitle">Select Gunnery skill.</p>
               <p>
                 <a class="button is-rounded" onclick="updateGunnery(event, 1);">1</a>
                 <a class="button is-rounded" onclick="updateGunnery(event, 2);">2</a>
@@ -44,7 +44,7 @@
               </p>
             </div>
             <div id="Attacker" class="content-tab" style="display:none">
-              <p class="title">Select Attacker movement.</p>
+              <p class="subtitle">Select Attacker movement.</p>
               <p>
                 <a class="button is-rounded is-primary" onclick="updateAttacker(event, 0, 0);">Stationary</a>
                 <a class="button is-rounded is-white" onclick="updateAttacker(event, 1, 1);">Walk</a>
@@ -54,7 +54,7 @@
               </p>
             </div>
             <div id="Target" class="content-tab" style="display:none">
-              <p class="title is-4">Select Target movement.</p>
+              <p class="subtitle">Select Target movement.</p>
               <p>
                 <div class="buttons has-addons is-right" id="targetBasic">
                   <a class="button is-rounded is-white" onclick="updateTarget(event, 0);">0 - 2</a>
@@ -105,7 +105,7 @@
               </div>
             </div>
             <div id="Range" class="content-tab" style="display:none">
-              <p class="title">Select Range.</p>
+              <p class="subtitle">Select Range.</p>
               <div class="buttons has-addons is-right">
                 <a class="button is-rounded is-white" onclick="updateRange(event, 0, 0);">Short</a>
                 <a class="button is-rounded is-success" onclick="updateRange(event, 1, 2);">Medium</a>

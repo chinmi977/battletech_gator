@@ -87,32 +87,72 @@
               </p>
             </div>
             <div id="Other" class="content-tab" style="display:none">
-              <p class="subtitle">Terrain</p>
-              <p>Woods between</p>
-              <div class="buttons has-addons" id="woodsBetween">
-                <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'woodsBetween', 0, 1);" modValue=1>Lv,1</a>
-                <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'woodsBetween', 1, 2);" modValue=2>Lv,2</a>
-                <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'woodsBetween', 2, 2);" modValue=2>Lv,1 x 2</a>
+              <div class="columns">
+                <div class="column is-full">
+                  <p class="subtitle">Terrain</p>
+                </div>
               </div>
-              <p>Woods among</p>
-              <div class="buttons has-addons" id="woodsAmong">
-                <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'woodsAmong', 0, 1);" modValue=1>Lv,1</a>
-                <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'woodsAmong', 1, 2);" modValue=2>Lv,2</a>
+              <div class="columns">
+                <div class="column is-half">
+                  <p>Woods between</p>
+                </div>
+                <div class="column is-half">
+                  <p>Woods among</p>
+                </div>
               </div>
-              <p>&nbsp;</p>
-              <div class="buttons has-addons" id="otherTerrain">
-                <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'otherTerrain', 0, 1);" modValue=1>Partial cover</a>
-                <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'otherTerrain', 1, 1);" modValue=1>Water Lv,1</a>
+              <div class="columns">
+                <div class="column is-half">
+                  <div class="buttons has-addons" id="woodsBetween">
+                    <div class="field is-grouped">
+                      <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'woodsBetween', 0, 1);" modValue=1>Lv,1</a>
+                      <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'woodsBetween', 1, 2);" modValue=2>Lv,2</a>
+                      <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'woodsBetween', 2, 2);" modValue=2>Lv,1 x 2</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-half">
+                  <div class="buttons has-addons" id="woodsAmong">
+                    <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'woodsAmong', 0, 1);" modValue=1>Lv,1</a>
+                    <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'woodsAmong', 1, 2);" modValue=2>Lv,2</a>
+                  </div>
+                </div>
               </div>
-              <p class="subtitle">2nd target</p>
-              <div class="buttons has-addons" id="seconderyTarget">
-                <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'seconderyTarget', 0, 1);" modValue=1>forward arc</a>
-                <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'seconderyTarget', 1, 2);" modValue=2>side or rear arc</a>
+              <!-- <div class="columns">
+                <div class="column is-full">
+                  <p>&nbsp;</p>
+                </div>
+              </div> -->
+              <div class="columns">
+                <div class="column is-full">
+                  <div class="buttons has-addons" id="otherTerrain">
+                    <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'otherTerrain', 0, 1);" modValue=1>Partial cover</a>
+                    <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'otherTerrain', 1, 1);" modValue=1>Water Lv,1</a>
+                  </div>
+                </div>
               </div>
-              <p class="subtitle">Heat</p>
-              <div class="buttons has-addons" id="otherHeat">
-                <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'otherHeat', 0, 1);" modValue=1>&lE; 8</a>
-                <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'otherHeat', 1, 2);" modValue=2>&lE;13</a>
+              <div class="columns">
+                <div class="column is-half">
+                  <p class="subtitle">2nd target</p>
+                </div>
+                <div class="column is-half">
+                  <p class="subtitle">Heat</p>
+                </div>
+              </div>
+              <div class="columns">
+                <div class="column">
+                  <div class="buttons has-addons" id="seconderyTarget">
+                    <div class="field is-grouped">
+                      <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'seconderyTarget', 0, 1);" modValue=1>forward arc</a>
+                      <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'seconderyTarget', 1, 2);" modValue=2>side or rear arc</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="buttons has-addons" id="otherHeat">
+                    <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'otherHeat', 0, 1);" modValue=1>&lE; 8</a>
+                    <a class="button is-rounded is-white is-small" onclick="updateOther(event, 'otherHeat', 1, 2);" modValue=2>&lE;13</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div id="Range" class="content-tab" style="display:none">
